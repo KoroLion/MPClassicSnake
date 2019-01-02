@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Classic Multiplayer Snake</title>
+    <meta charset="UTF-8">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Tahoma;
+
+            -webkit-user-select: none;
+            -moz-user-select: -moz-none;
+            -ms-user-select: none;
+            user-select: none;
+
+            background-color: grey;
+        }
+        canvas#game {
+            padding: 0;
+            margin: 10px;
+        }
+
+        div.ingame-gui {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.ingame-gui > div.debug-info {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            padding: 5px;
+            color: white;
+            background-color: rgba(10, 10, 10, 0.5);
+            border: 1px solid rgba(5, 5, 5, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="gui" class="ingame-gui">
+        <div class="debug-info">
+            <div>Ping: 0ms</div>
+        </div>
+    </div>
+    <canvas id="game">
+    </canvas>
+    <script src="main.js"></script>
+</body>
+</html>
